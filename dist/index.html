@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SANDA · Lemari yang lebih berarti</title>
+  <meta name="description" content="Prototipe interaktif SANDA: scan pakaian, kelola lemari digital, temukan outfit, dan rawat pakaian lebih lama.">
+  <link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Lewati ke konten</a>
+  <aside class="sidebar">
+    <a class="brand" href="#home" aria-label="SANDA beranda"><img src="assets/logo.png" alt=""><span>SANDA<small>Sandang Daya</small></span></a>
+    <p class="nav-caption">Ruang pakaianmu</p>
+    <nav aria-label="Menu utama" id="nav"></nav>
+    <div class="sidebar-bottom"><div class="circle-mark">↻</div><strong>Lebih sering dipakai.<br>Lebih lama berarti.</strong><p>Satu lemari, banyak kemungkinan.</p><button class="text-button" data-action="guide">Panduan demo</button></div>
+    <div class="profile"><span class="avatar">S</span><div><strong>Sahabat SANDA</strong><small>Ruang demo pribadi</small></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span id="breadcrumb">Lemari digital / Beranda</span><div><span class="demo-tag">Prototipe interaktif</span><button class="help" data-action="guide" aria-label="Panduan penggunaan">?</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>Data demo dan foto tersimpan di browser ini. <button class="text-button" data-action="reset">Atur ulang demo</button></footer>
+  </div>
+  <dialog id="modal"><button class="close" aria-label="Tutup dialog">×</button><div id="modal-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
