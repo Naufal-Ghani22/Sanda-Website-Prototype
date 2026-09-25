@@ -1,15 +1,20 @@
 # SANDA prototype
 
-Prototipe browser untuk demo final BPC. Buka `dist/index.html` langsung, atau jalankan `python -m http.server 4173 --directory dist` dari folder ini dan buka http://127.0.0.1:4173.
+Prototipe browser untuk demo final BPC. Buka `dist/index.html` langsung, atau jalankan `python -m http.server 4173 --directory dist` dari folder ini dan buka http://127.0.0.1:4173. Tidak memerlukan instalasi paket atau build.
 
 ## Alur demonstrasi
 
 1. Beranda → Scan pakaian → Pilih foto atau contoh → Konfirmasi detail → Simpan.
-2. Lemari saya → detail pakaian → catat dipakai atau buka perawatan.
-3. Outfit → kegiatan, gaya, cuaca → susun → catat pemakaian.
-4. Cek belanja → kategori dan warna → lihat kesamaan dan calon pasangan.
-5. Perawatan → rencana repair, upcycle, donasi → tersimpan di Aktivitas.
-6. Aktivitas → mulai tantangan 7 hari. Setiap hari berbeda dengan pemakaian tercatat menambah progres.
+2. Outfit → kegiatan, gaya, cuaca → susun → catat pemakaian. Kamu bisa juga mencatat pemakaian satu item dari Lemari saya.
+3. Cek belanja → kategori dan warna → lihat kesamaan dan calon pasangan. Hasil cek tercatat di Aktivitas.
+4. Perawatan → pilih pakaian, baca panduan → simpan rencana repair, upcycle, atau donasi.
+5. Aktivitas → lihat jejak empat langkah di atas atau mulai tantangan 7 hari. Setiap hari berbeda dengan pemakaian tercatat menambah progres.
+
+Beranda menunjukkan progres empat langkah dan langkah berikutnya. Di HP, navigasi bawah menampilkan Beranda, Lemari, Scan, Outfit, dan Lainnya (Cek belanja, Perawatan, Aktivitas).
+
+## Deploy melalui GitHub ke Vercel
+
+Repositori ini sudah disiapkan sebagai situs statis. `vercel.json` menunjuk `dist` sebagai output. Setelah perubahan masuk ke branch GitHub yang akan dipakai, di Vercel pilih **Add New → Project**, impor `Naufal-Ghani22/Sanda-Website-Prototype`, lalu deploy. Gunakan root directory repositori (`./`); framework **Other** dan tidak perlu build command. Output Directory seharusnya terbaca `dist` dari `vercel.json`. Setiap push berikutnya ke branch produksi akan memperbarui situs.
 
 ## Batas demo
 

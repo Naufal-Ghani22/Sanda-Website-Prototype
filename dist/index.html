@@ -16,11 +16,13 @@
     <div class="profile"><span class="avatar">S</span><div><strong>Sahabat SANDA</strong><small>Ruang demo pribadi</small></div></div>
   </aside>
   <div class="workspace">
-    <header class="topbar"><span id="breadcrumb">Lemari digital / Beranda</span><div><span class="demo-tag">Prototipe interaktif</span><button class="help" data-action="guide" aria-label="Panduan penggunaan">?</button></div></header>
+    <header class="topbar"><a class="mobile-brand" href="#home" aria-label="SANDA beranda"><img src="assets/logo.png" alt="">SANDA</a><span id="breadcrumb">Lemari digital / Beranda</span><div><span class="demo-tag">Prototipe interaktif</span><button class="help" data-action="guide" aria-label="Panduan penggunaan">?</button></div></header>
     <main id="main" tabindex="-1"></main>
     <footer>Data demo dan foto tersimpan di browser ini. <button class="text-button" data-action="reset">Atur ulang demo</button></footer>
   </div>
+  <nav id="mobile-nav" aria-label="Menu utama HP"></nav>
   <dialog id="modal"><button class="close" aria-label="Tutup dialog">×</button><div id="modal-content"></div></dialog>
+  <dialog id="more-menu" aria-label="Menu lainnya"><button class="close" data-action="close-more" aria-label="Tutup menu">×</button><div class="more-content"><h2>Jelajahi SANDA</h2><nav aria-label="Menu tambahan"><a href="#shop">Cek belanja ${''}</a><a href="#care">Perawatan</a><a href="#analytics">Aktivitas</a></nav><button class="text-button" data-action="guide">Panduan demo</button></div></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
   <script src="app.js" defer></script>
 </body>
